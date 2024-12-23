@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding to UTF-8 for proper text rendering -->
+    <meta charset="UTF-8">
+    
+    <!-- Make the webpage responsive by setting the viewport to scale based on device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage that appears in the browser tab -->
+    <title>StockFetch</title>
+    
+    <!-- Link to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- Main heading of the webpage -->
+    <h1>StockFetch</h1>
+
+    <!-- Form for collecting stock data input from the user -->
+    <form id="stockForm">
+        <!-- Label and input field for stock ticker symbol -->
+        <label for="stockTicker">Stock Ticker:</label>
+        <input type="text" id="stockTicker" name="stockTicker" required><br>
+
+        <!-- Label and input field for start date of the stock data range -->
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <!-- Label and input field for end date of the stock data range -->
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br>
+
+        <!-- Checkboxes for selecting which stock data parameters to include -->
+        <!-- Each checkbox represents a different parameter: Open Price, High Price, Low Price, Close Price, and Volume -->
+
+        <!-- Checkbox for Open Price -->
+        <input type="checkbox" id="openPrice" name="Parameters" value="True">
+        <label for="openPrice">Open Price</label><br>
+        
+        <!-- Checkbox for High Price -->
+        <input type="checkbox" id="highPrice" name="Parameters" value="True">
+        <label for="highPrice">High Price</label><br>
+        
+        <!-- Checkbox for Low Price -->
+        <input type="checkbox" id="lowPrice" name="Parameters" value="True">
+        <label for="lowPrice">Low Price</label><br>
+        
+        <!-- Checkbox for Close Price -->
+        <input type="checkbox" id="closePrice" name="Parameters" value="True">
+        <label for="closePrice">Close Price</label><br>
+        
+        <!-- Checkbox for Volume -->
+        <input type="checkbox" id="volume" name="Parameters" value="True">
+        <label for="volume">Volume</label><br>
+        
+        <!-- Button to trigger sending the data entered in the form -->
+        <button type="button" onclick="sendData()">Send Data</button>
+    </form>
+
+    <!-- Link to JavaScript file that contains the logic for handling form submission -->
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
+
