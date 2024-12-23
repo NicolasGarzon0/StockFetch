@@ -6,7 +6,7 @@
 
 
 
-![StockFetch](Images/Image 1.png)
+![StockFetch](Images/Image%201.png)
 
 
 ## Getting An API Key
