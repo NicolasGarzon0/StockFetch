@@ -1,5 +1,5 @@
 
-# StockFetch: Webpage for Extracting and Downloading Stock Data
+# StockFetch: Webpage For Downloading Stock Data
 
 **StockFetch** is a web application that allows users to download specific stock market data, including open price, close price, volume, low price, and high price, in CSV format for a given stock (from either the NYSE or NASDAQ). Users must enter a stock ticker, select a date range, and choose at least one parameter to retrieve the data. The CSV file will then be automatically downloaded to their computer.
 
