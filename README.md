@@ -33,7 +33,7 @@
 
 4. Open the `.env` file in the `myapp` directory and add your API key:
     ```bash
-    ALPHA_VANTAGE_API_KEY=your_api_key
+    APIKEY=your_api_key
     ```
 
 5. Run the application:
